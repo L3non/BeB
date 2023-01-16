@@ -11,18 +11,49 @@
 </head>
 <body>
 
-   <header>
-      <div id="menu-bar" class="fa fa-bars"></div>
-      <a href="#" class="logo">Logo</a>
-      <nav class="navbar">
-          <a href="#home">Início</a>
-          <a href="#product">Produtos</a>
-          <a href="#fearured">Sobre</a>
-          <a href="#blog">Contato</a>
-      </nav>
-  </header>
+      <section>
+      <!-- Circle -->
+      <div class="circle"></div>
+      <!-- End Circle -->
 
+      <!-- Header -->
+      <header>
+         <a href="#"><img src="assets/logo.png" alt="B&B logo" class="logo"></a>
+         <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navegation">
+               <li><a href="#">Início</a></li>
+               <li><a href="#">Produtos</a></li>
+               <li><a href="#">Sobre nós</a></li>
+               <li><a href="#">Contato</a></li>
+            </ul>
+      </header>
+      <!-- End Header -->
 
+      <!-- Content -->
+      <div class="content">
+         <div class="textbox">
+            <h1>Qualidade & Criatividade<br><span>B&B Chaveiros</span></h1>
+            <p>Fabricante de chaveiros personalizados, localizados em São Paulo estamos há mais de uma década proporcionando doces lembranças!</p>
+         </div>
+         <div class="imgbox">
+            <img src="assets/chaveiro0.png" alt="Chaveiro" class="beb">
+         </div>
+      </div>
+      <!-- End Content -->
+
+      <!-- Thumb -->
+      <ul class="thumb">
+         <li><img src="assets/chaveiro0.png" alt="coffee" onclick="imgSlider('assets/chaveiro0.png');changeCircleColor('#531B7C')"></li>
+         <li><img src="assets/chaveiro1.png" alt="coffee" onclick="imgSlider('assets/chaveiro1.png');changeCircleColor('#eb7495')"></li>
+         <li><img src="assets/chaveiro0.png" alt="coffee" onclick="imgSlider('assets/chaveiro0.png');changeCircleColor('#d752b1')"></li>
+      </ul>
+      <ul class="sci">
+         <li><a href="https://www.instagram.com/chaveirosbb/" target="_blank"><img src="assets/instagram.png" alt="facebook icon"></a></li>
+         <li><a href="https://api.whatsapp.com/send?phone=5511979557102"><img src="assets/whatsapp.png" alt="facebook icon"></a></li>
+         <li><a href="#"><img src="assets/email.png" alt="facebook icon"></a></li>
+      </ul>
+      <!-- End Thumb-->
+   </section>
 
    <!-- Script -->
    <script src="script.js"></script>
