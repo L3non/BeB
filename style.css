@@ -35,6 +35,11 @@ header .logo{
    max-width: 80px;
 }
 
+header a{
+   margin-top: 7px;
+   margin-bottom: 7px;
+}
+
 header > ul{
    position: relative;
    display: flex;
@@ -51,13 +56,52 @@ header > ul > li > a{
    font-size: 18px;
    margin-left: 40px;
    text-decoration: none;
-   padding: 7px;
-   border-radius: 60px;
+   padding: 9px;
+   border-radius: 70px;
 }
 
 header > ul > li > a:hover{
    background-color: #fde50e;
+   transition: 0.4s ease;
 
+}
+
+.toggle{
+   position: fixed;
+   right: 0;
+   margin-right: 35px;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   background: url(../assets/menu.png);
+   background-size: 30px;
+   background-position: center;
+   background-repeat: no-repeat;
+   filter: invert(1);
+   z-index: 11;
+}
+
+.toggle.active{
+   position: fixed;
+   right: 20px;
+   background: url(../assets/close.png);
+   background-size: 25px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+header > ul.navegation.active{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: #ccc;
+   z-index: 10;
 }
 
 .content{
@@ -128,6 +172,7 @@ header > ul > li > a:hover{
 }
 
 .sci{
+   border-radius: 10px;
    box-shadow: 0 .6rem 1rem rgba(255, 255, 255, 0.178);
    position: absolute;
    top: 50%;
@@ -149,6 +194,11 @@ header > ul > li > a:hover{
    transform: scale(0.6);
 }
 
+.sci > li > a:hover{
+   filter: invert(1);
+   transition: 0.4s ease;
+}
+
 .circle{
    position: absolute;
    top: 0;
@@ -157,6 +207,30 @@ header > ul > li > a:hover{
    height: 100%;
    background: #531B7C;
    clip-path: circle(600px at right 800px);
+}
+
+#footer{
+   background-color: #24262b;
+   padding: 70px 0;
+}
+
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer-col{
+   width: 25%;
+}
+
+.container{
+   max-width: 1170px;
+   background-color: #fde50e;
+   margin: auto;
+}
+
+ul{
+   list-style: none;
 }
 
 @media (max-width: 991px){
@@ -169,7 +243,9 @@ header > ul > li > a:hover{
    }
 
    .toggle{
-      position: relative;
+      position: fixed;
+      right: 0;
+      margin-right: 10px;
       width: 30px;
       height: 30px;
       cursor: pointer;
@@ -210,7 +286,7 @@ header > ul > li > a:hover{
 
    header > ul > li > a{
       font-size: 1.5em;
-      margin: 5px 0;
+      margin: 7px 0;
    }
 
    section{
@@ -249,11 +325,9 @@ header > ul > li > a:hover{
    }
 
    .sci{
-      margin-top: 14%;
+      margin-top: 12%;
       background: #fde50e;
       right: 0;
       width: 50px;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
    }
 }
