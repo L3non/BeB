@@ -13,3 +13,10 @@ function toggleMenu(){
    menuToggle.classList.toggle('active')
    navegation.classList.toggle('active')
 }
+
+document.addEventListener('click', function(event){
+   const element = event.target
+   if(element.classList.contains('link')){
+      toggleMenu()
+   }
+})
