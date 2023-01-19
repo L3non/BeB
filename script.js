@@ -8,10 +8,16 @@ function changeCircleColor(color){
 }
 
 function toggleMenu(){
+   const windowWidth = window.innerWidth
+   const isMobile = windowWidth <= 991
    var menuToggle = document.querySelector('.toggle');
    var navegation = document.querySelector('.navegation')
+   
    menuToggle.classList.toggle('active')
+
+   if(isMobile){
    navegation.classList.toggle('active')
+   }
 }
 
 document.addEventListener('click', function(event){
