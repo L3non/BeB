@@ -219,6 +219,96 @@ header > ul.navegation.active{
 }
 /* End Home */
 
+/* Main */
+
+/* End Main */
+
+/* Contact */
+.container-c{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.section-title{
+   font-size: 4rem;
+   font-weight: 300;
+   color: black;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+   text-align: center;
+}
+
+.section-title span{
+   color: #fde50e;
+}
+
+#contact .contact{
+   flex-direction: column;
+   max-width: 1200px;
+   margin: 0 auto;
+   width: 90%;
+}
+
+#contact .contact-items{
+   width: 85%;
+}
+
+#contact .contact-item{
+   text-align: center;
+   border-radius: 10px;
+   padding: 30px;
+   margin: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   box-shadow: 0 0 18px 0 #fff;
+   transition: 0.3s ease box-shadow;
+   background-color: #24262b;
+}
+
+#contact .contact-item:hover{
+   box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+}
+
+#contact .icon{
+   width: 70px;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   filter: invert(1);
+}
+
+#contact .contact-info h1{
+   font-size: 2.5rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+   color: #fde50e;
+}
+
+#contact .contact-info h2{
+   font-size: 1.3rem;
+   line-height: 2rem;
+   font-weight: 500;
+}
+
+#contact .contact-info h2 > a{
+   color: #fff;
+   text-decoration: none;
+   font-weight: 300;
+   display: block;
+   transition: all 0.3s ease;
+}
+
+#contact .contact-info a:hover{
+   color: #fde50e;
+   padding-left: 10px;
+}
+/* End Contact */
+
 /* Footer */
 #footer{
    background-color: #24262b;
