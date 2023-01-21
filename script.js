@@ -8,21 +8,23 @@ function changeCircleColor(color){
 }
 
 function toggleMenu(){
-   const windowWidth = window.innerWidth
-   const isMobile = windowWidth <= 991
    var menuToggle = document.querySelector('.toggle');
    var navegation = document.querySelector('.navegation')
    
    menuToggle.classList.toggle('active')
-
-   if(isMobile){
    navegation.classList.toggle('active')
-   }
+}
+
+function closeMenu(){
+   menuToggle.classList.remove('active')
+   navegation.classList.remove('active')
 }
 
 document.addEventListener('click', function(event){
+   const windowWidth = window.innerWidth
+   const isMobile = windowWidth <= 991
    const element = event.target
    if(element.classList.contains('link')){
-      toggleMenu()
+      isMobile ? toggleMenu(): closeMenu()
    }
 })
