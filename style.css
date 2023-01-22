@@ -12,7 +12,7 @@ scroll-behavior: smooth;
 }
 
 .container-c{
-   min-height: 100vh;
+   min-height: 70vh;
    width: 100%;
    display: flex;
    align-items: center;
@@ -55,16 +55,16 @@ header a{
    margin-bottom: 7px;
 }
 
-header > ul{
+header ul{
    position: relative;
    display: flex;
 }
 
-header > ul > li{
+header ul li{
    list-style: none;
 }
 
-header > ul > li > a{
+header ul li a{
    display: inline-block;
    color: #333;
    font-weight: 400;
@@ -75,7 +75,7 @@ header > ul > li > a{
    border-radius: 70px;
 }
 
-header > ul > li > a:hover{
+header ul li a:hover{
    background-color: #fde50e;
    transition: 0.4s ease;
 
@@ -105,7 +105,7 @@ header > ul > li > a:hover{
    background-repeat: no-repeat;
 }
 
-header > ul.navegation.active{
+header ul.navegation.active{
    position: fixed;
    top: 0;
    left: 0;
@@ -134,14 +134,14 @@ header > ul.navegation.active{
    max-width: 600px;
 }
 
-.content .textbox > h1{
+.content .textbox h1{
    color: #333;
    font-size: 2.3em;
    line-height: 1.4em;
    font-weight: 500;
 }
 
-.content .textbox > h1 > span{
+.content .textbox h1 span{
    color: #fde50e;
    font-size: 1.7em;
    font-weight: 900;
@@ -302,17 +302,20 @@ header > ul.navegation.active{
    flex-direction: column;
    max-width: 1200px;
    margin: 0 auto;
-   width: 90%;
+   width: 100%;
 }
 
 #contact .contact-items{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 30px;
    width: 100%;
 }
 
 #contact .contact-item{
    text-align: center;
    border-radius: 10px;
-   padding: 30px;
+   padding: 15px 75px;
    margin: 30px;
    display: flex;
    justify-content: center;
@@ -567,11 +570,19 @@ ul{
       width: 229px;
       height: 340px;
    }
-}
 /* End Responsive About us*/
 
+/* Responsive Contact*/
+   #contact .contact-items{
+      display: block;
+   }
+
+   #contact .contact-item{
+      padding: 30px;
+}
+/* End Responsive Contact*/
+
 /* Responsive Footer */
-@media(max-width: 767px){
    .footer-col{
       width: 50%;
       margin-bottom: 30px;
