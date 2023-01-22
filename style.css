@@ -11,6 +11,14 @@ html,body{
 scroll-behavior: smooth;
 }
 
+.container-c{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 /* Header */
 section{
    position: relative;
@@ -223,14 +231,58 @@ header > ul.navegation.active{
 
 /* End Main */
 
-/* Contact */
-.container-c{
-   min-height: 100vh;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+/*About us*/
+#about .about{
+   text-align: center;
+   max-width: 970px;
+   margin: 0 auto;
+   padding: 100px 20px;
+   z-index: 1;
 }
+
+#about .col-left{
+   width: 250px;
+   height: 360px;
+}
+
+#about .col-right{
+   width: 100%;
+}
+
+#about .col-right > h2{
+   font-size: 1.8rem;
+   font-weight: 500;
+   letter-spacing: 0.2rem;
+   margin-bottom: 10px;
+}
+
+#about .col-right > p{
+   margin-bottom: 20px;
+   margin-left: 15px;
+   text-align: left;
+}
+
+#about .col-left .about-img{
+   height: 100%;
+   width: 100%;
+   position: relative;
+   border: 10px solid #fff;
+   object-fit: cover;
+}
+
+#about .col-left .about-img::after{
+   content: '';
+   position: absolute;
+   left: -33px;
+   top: 19px;
+   height: 98%;
+   width: 98%;
+   border: 7px solid#FFFC00;
+   z-index: -1;
+}
+/*End About us*/
+
+/* Contact */
 
 .section-title{
    font-size: 4rem;
@@ -398,6 +450,8 @@ ul{
 }
 /* End Footer */
 
+
+
 /* Responsive Home */
 @media (max-width: 991px){
    header{
@@ -498,6 +552,23 @@ ul{
    }
 }
 /* End Responsive Home */
+
+/* Responsive About us */
+@media(max-width: 767px){
+   #about .about{
+      flex-direction: column-reverse;
+   }
+
+   #about .about p{
+      text-align: center;
+   }
+
+   #about .col-left .about-img img{
+      width: 229px;
+      height: 340px;
+   }
+}
+/* End Responsive About us*/
 
 /* Responsive Footer */
 @media(max-width: 767px){
