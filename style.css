@@ -62,6 +62,7 @@ header ul{
 
 header ul li{
    list-style: none;
+   position: relative;
 }
 
 header ul li a{
@@ -78,7 +79,6 @@ header ul li a{
 header ul li a:hover{
    background-color: #fde50e;
    transition: 0.4s ease;
-
 }
 
 .toggle{
@@ -117,6 +117,23 @@ header ul.navegation.active{
    flex-direction: column;
    background: #ccc;
    z-index: 10;
+}
+
+.drop-ul{
+   background-color: #fff;
+   position: absolute;
+   display: none;
+   grid-template-columns: repeat(3, 1fr);
+   border: 1px solid #24262b;
+   z-index: 500;
+}
+
+.drop-ul.active{
+   display: grid;
+}
+
+.drop-ul a{
+   background-color: black;
 }
 /* End Header */
 
@@ -360,7 +377,7 @@ header ul.navegation.active{
 
 #contact .contact-info a:hover{
    color: #fde50e;
-   padding-left: 10px;
+   transform: translateX(10px);
 }
 /* End Contact */
 
