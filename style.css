@@ -133,12 +133,18 @@ header ul.navegation.active{
    z-index: 10;
 }
 
+.drop{
+   display: flex;
+   justify-content: center;
+}
+
 .drop-ul {
    background-color: #fff;
    position: absolute;
    display: none;
    grid-template-columns: repeat(3, 1fr);
    z-index: 500;
+   margin-left: 45px;
 }
 
 .drop-ul.active{
@@ -149,7 +155,8 @@ header ul.navegation.active{
    border: 1px solid #333;
    border-radius: 0;
    margin: 0;
-   width: 170px;
+   width: 160px;
+   text-align: center;
    transition: 0.1s ease;
 }
 
@@ -304,11 +311,12 @@ header ul.navegation.active{
 
 .object .box img{
    margin-top: 15px;
-   width: 120px;
+   height: 165px;
+   width: 165px;
 }
 
 .object .box h4{
-   margin-top: 20px;
+   margin-top: 40px;
 }
 /* End Main */
 
@@ -620,12 +628,6 @@ ul{
       right: 0;
       width: 50px;
    }
-
-   .drop-ul{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-
-   }
    /* End Responsive Home */
 
    /* Responsive Main*/
@@ -634,6 +636,19 @@ ul{
       margin: 15px 7px;
    }
    /* End Responsive Main*/
+
+   .drop{
+      display: flex;
+      justify-content: center;
+   }
+
+   .drop-ul{
+      margin: 0;
+   }
+
+   .drop .drop-ul li a{
+      width: 160px;
+   }
 }
 
 /* Responsive About us */
