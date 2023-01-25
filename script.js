@@ -13,6 +13,7 @@ function toggleMenu(){
    
    menuToggle.classList.toggle('active')
    navegation.classList.toggle('active')
+   closeDropdown()
 }
 
 function closeMenu(){
@@ -44,3 +45,17 @@ headerLinks.forEach((link) => {
       }
    })
 })
+
+const dropdownLinks = document.querySelectorAll('.drop-ul a')
+dropdownLinks.forEach((link) => {
+   link.addEventListener('click', function(event){
+      closeDropdown()
+      closeMenu()
+   })
+})
+
+function closeDropdown(){
+   var navegation = document.querySelector('.drop-ul')
+
+   navegation.classList.remove('active')
+}
