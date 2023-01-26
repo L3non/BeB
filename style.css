@@ -161,7 +161,7 @@ header ul.navegation.active{
 }
 
 .drop-ul a:hover{
-   background-color: rgba(175, 175, 175, 0.644);
+   background-color: #fde50e
 }
 /* End Header */
 
@@ -301,7 +301,7 @@ header ul.navegation.active{
    text-align: center;
    border-radius: 11px;
    transition: 0.2s ease;
-   border: 1.5px solid #fde50e;
+   border: 2px solid #fde50e;
 }
 
 .object .box:hover{
@@ -317,6 +317,7 @@ header ul.navegation.active{
 
 .object .box h4{
    margin-top: 40px;
+   background-color: #fde50e;
 }
 /* End Main */
 
