@@ -161,6 +161,14 @@ header ul.navegation.active{
 .drop-ul a:hover{
    background-color: #fde50e
 }
+
+.drop-ul .del a{
+   color: white;
+}
+
+.drop-ul .del a:hover{
+   background-color: white;
+}
 /* End Header */
 
 /* Home */
