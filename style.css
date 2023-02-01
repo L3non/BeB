@@ -20,7 +20,7 @@ scroll-behavior: smooth;
 }
 
 .section-title{
-   font-size: 4rem;
+   font-size:3.7rem;
    font-weight: 300;
    color: black;
    margin-bottom: 10px;
@@ -153,8 +153,11 @@ header ul.navegation.active{
    border: 1px solid #333;
    border-radius: 0;
    margin: 0;
-   width: 160px;
-   text-align: center;
+   height: 52px;
+   width: 180px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    transition: 0.1s ease;
 }
 
@@ -319,6 +322,11 @@ header ul.navegation.active{
    margin-top: 15px;
    height: 155px;
    width: 155px;
+}
+
+.object .box img .rect{
+   height: 100px;
+   width: 250px;
 }
 
 .object .box h4{
