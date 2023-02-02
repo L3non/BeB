@@ -20,7 +20,7 @@ scroll-behavior: smooth;
 }
 
 .section-title{
-   font-size:3.7rem;
+   font-size:4rem;
    font-weight: 300;
    color: black;
    margin-bottom: 10px;
@@ -547,6 +547,16 @@ ul{
 
 /* Responsive Home */
 @media (max-width: 991px){
+   .section-title{
+      font-size:2.9rem;
+      font-weight: 300;
+      color: black;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      text-align: center;
+   }
+
    header{
       padding: 5px 20px;
    }
@@ -647,8 +657,8 @@ ul{
 
    /* Responsive Main*/
    .object .box{
-      width: 190px;
-      margin: 15px 10px;
+      width: 170px;
+      margin: 15px 5px;
    }
    /* End Responsive Main*/
 
@@ -662,7 +672,7 @@ ul{
    }
 
    .drop .drop-ul li a{
-      width: 160px;
+      width: 134px;
    }
 }
 
