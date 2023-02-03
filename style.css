@@ -657,8 +657,8 @@ ul{
 
    /* Responsive Main*/
    .object .box{
-      width: 170px;
-      margin: 15px 5px;
+      width: 165px;
+      margin: 15px 4px;
    }
    /* End Responsive Main*/
 
@@ -672,7 +672,7 @@ ul{
    }
 
    .drop .drop-ul li a{
-      width: 134px;
+      width: 126px;
    }
 }
 
