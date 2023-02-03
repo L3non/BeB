@@ -397,6 +397,7 @@ header ul.navegation.active{
 
 #contact .contact-items{
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
    margin-top: 30px;
    width: 100%;
