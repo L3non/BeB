@@ -663,7 +663,8 @@ ul{
    /* Responsive Main*/
    .object .box{
       width: 165px;
-      margin: 15px 4px;
+      height: 250px;
+      margin: 15px 2px;
    }
    /* End Responsive Main*/
 
