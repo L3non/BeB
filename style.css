@@ -674,8 +674,8 @@ ul{
    }
 }
 
-/* Responsive About us */
 @media(max-width: 767px){
+/* Responsive About us */
    #about .about{
       flex-direction: column-reverse;
    }
@@ -690,17 +690,23 @@ ul{
    }
 /* End Responsive About us*/
 
-   /* Responsive Main*/
+/* Responsive Main*/
    .object .box{
       width: 150px;
       height: 250px;
-      margin: 15px 2px;
+      margin: 14px 2px;
+   }
+
+   .object .box img{
+      margin-top: 15px;
+      height: 132px;
+      width: 132px;
    }
 
    .object .box h4{
       margin-top: 35px;
    }
-   /* End Responsive Main*/
+/* End Responsive Main*/
 
 /* Responsive Contact*/
    #contact .contact-items{
