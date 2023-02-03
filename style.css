@@ -631,6 +631,10 @@ ul{
       margin-bottom: 15px;
    }
 
+   .content .textbox h1 span{
+      font-size: 1.4em;
+   }
+
    .content .imgbox{
       max-width: 100%;
       justify-content: center;
