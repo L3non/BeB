@@ -660,14 +660,6 @@ ul{
    }
    /* End Responsive Home */
 
-   /* Responsive Main*/
-   .object .box{
-      width: 155px;
-      height: 250px;
-      margin: 15px 2px;
-   }
-   /* End Responsive Main*/
-
    .drop{
       display: flex;
       justify-content: center;
@@ -697,6 +689,14 @@ ul{
       height: 340px;
    }
 /* End Responsive About us*/
+
+   /* Responsive Main*/
+   .object .box{
+      width: 150px;
+      height: 250px;
+      margin: 15px 2px;
+   }
+   /* End Responsive Main*/
 
 /* Responsive Contact*/
    #contact .contact-items{
