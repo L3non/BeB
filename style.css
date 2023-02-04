@@ -670,7 +670,8 @@ ul{
    }
 
    .drop .drop-ul li a{
-      width: 126px;
+      width: 116px;
+      font-size: 1rem;
    }
 }
 
