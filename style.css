@@ -111,7 +111,7 @@ header ul li a:hover{
 .toggle.active{
    position: fixed;
    right: 20px;
-   background: url(../assets/close.png);
+   background: url(./assets/close.png);
    background-size: 25px;
    background-position: center;
    background-repeat: no-repeat;
@@ -573,7 +573,7 @@ ul{
       width: 30px;
       height: 30px;
       cursor: pointer;
-      background: url(../assets/menu.png);
+      background: url(./assets/menu.png);
       background-size: 30px;
       background-position: center;
       background-repeat: no-repeat;
@@ -584,7 +584,7 @@ ul{
    .toggle.active{
       position: fixed;
       right: 20px;
-      background: url(../assets/close.png);
+      background: url(./assets/close.png);
       background-size: 25px;
       background-position: center;
       background-repeat: no-repeat;
