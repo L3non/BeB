@@ -303,8 +303,8 @@ header ul.navegation.active{
 }
 
 .object .box{
-   height: 270px;
-   width: 200px;
+   height: 260px;
+   width: 170px;
    margin: 20px 10px;
    background-color: rgb(243, 243, 243);
    text-align: center;
@@ -320,8 +320,8 @@ header ul.navegation.active{
 
 .object .box img{
    margin-top: 15px;
-   height: 155px;
-   width: 155px;
+   height: 150px;
+   width: 150px;
 }
 
 .object .box img .rect{
